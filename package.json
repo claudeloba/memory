@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "homepage": "https://claudeloba.github.io/memory/",
   "type": "module",
-  "scripts": {
-    "deploy": "gh-pages -d build",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
+
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "serve": "vite preview",
+      "predeploy": "vite build",
+      "deploy": "gh-pages -d dist"
+    },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
